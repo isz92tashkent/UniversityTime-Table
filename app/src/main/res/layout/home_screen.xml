@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:gravity="center_horizontal"
+    tools:context="com.developer.universitytimetable.HomeScreen" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize" >
+
+        <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/home_layout_padding" >
+
+        <LinearLayout
+            android:id="@+id/newlesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_add_lesson" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/home_text_margin_top"
+                android:gravity="center"
+                android:text="Add New\nLessons"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/home_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weekview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/home_layout_margin_top"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_upcomming_task" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/home_text_margin_top"
+                android:gravity="center"
+                android:text="Weekview\nTimetable"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/home_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/home_layout_margin_top"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_contact_us" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/home_text_margin_top"
+                android:gravity="center"
+                android:text="Contact Us"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/home_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/home_layout_padding" >
+
+        <LinearLayout
+            android:id="@+id/classes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_today_classes" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/home_text_margin_top"
+                android:gravity="center"
+                android:text="Today&apos;s\nClasses"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/home_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upcoming_tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/home_layout_margin_top"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_upcoming_task" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/home_text_margin_top"
+                android:gravity="center"
+                android:text="Upcoming\nTask Info"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/home_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/home_layout_margin_top"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_about_app" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/home_text_margin_top"
+                android:gravity="center"
+                android:text="About Us"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/home_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.developer.universitytimetable.Splash" >
+
+    <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+        android:id="@+id/tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="University"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+        android:id="@+id/txx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Time Table"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+</LinearLayout>

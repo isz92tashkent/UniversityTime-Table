@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context="com.developer.universitytimetable.Upcoming_Info" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize" >
+
+        <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/text_color"
+            android:text="Upcoming Tasks Detail"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+        android:id="@+id/task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_awesome_toolbar"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/text_color"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Task"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/task"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:id="@+id/module_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Module Name Is : "
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:background="@android:color/white" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:id="@+id/module_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:text="Module Code Is :"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:background="@android:color/white" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:id="@+id/teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:text="Teacher Name Is :"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:background="@android:color/white" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:text="Teacher Email Is :"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:background="@android:color/white" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:id="@+id/credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:text="Credit Hour Is :"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:background="@android:color/white" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:textColor="@color/text_color"
+                android:text="Date :"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:background="@android:color/white" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:id="@+id/start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:textColor="@color/text_color"
+                android:text="Start Time :"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:background="@android:color/white" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:id="@+id/end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:textColor="@color/text_color"
+                android:text="End Time Is :"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:background="@android:color/white" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:textColor="@color/text_color"
+                android:text="Exam Info Is :"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/detail_textview_margin_top"
+                android:background="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

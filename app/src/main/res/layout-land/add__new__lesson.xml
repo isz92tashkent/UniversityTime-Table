@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context="com.developer.universitytimetable.Add_New_Lesson" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize" >
+
+        <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add New Lessons"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@id/my_awesome_toolbar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp" >
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_EditText
+                android:id="@+id/module_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/add_edittext_margin_left"
+                android:layout_marginRight="@dimen/add_edittext_margin_left"
+                android:layout_marginTop="@dimen/add_edittext_margin_top"
+                android:gravity="center_vertical"
+                android:hint="Module Name"
+                android:inputType="text"
+                android:paddingLeft="@dimen/add_edittext_padding"
+                android:paddingRight="@dimen/add_edittext_padding"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_EditText
+                android:id="@+id/module_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/module_name"
+                android:layout_marginLeft="@dimen/add_edittext_margin_left"
+                android:layout_marginRight="@dimen/add_edittext_margin_left"
+                android:layout_marginTop="@dimen/add_edittext_margin_top"
+                android:gravity="center_vertical"
+                android:hint="Module Code"
+                android:inputType="text"
+                android:paddingLeft="@dimen/add_edittext_padding"
+                android:paddingRight="@dimen/add_edittext_padding"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_EditText
+                android:id="@+id/teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/module_code"
+                android:layout_marginLeft="@dimen/add_edittext_margin_left"
+                android:layout_marginRight="@dimen/add_edittext_margin_left"
+                android:layout_marginTop="@dimen/add_edittext_margin_top"
+                android:gravity="center_vertical"
+                android:hint="Teacher Name"
+                android:inputType="text"
+                android:paddingLeft="@dimen/add_edittext_padding"
+                android:paddingRight="@dimen/add_edittext_padding"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_EditText
+                android:id="@+id/teacher_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teacher_name"
+                android:layout_marginLeft="@dimen/add_edittext_margin_left"
+                android:layout_marginRight="@dimen/add_edittext_margin_left"
+                android:layout_marginTop="@dimen/add_edittext_margin_top"
+                android:gravity="center_vertical"
+                android:hint="Teacher Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/add_edittext_padding"
+                android:paddingRight="@dimen/add_edittext_padding"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_EditText
+                android:id="@+id/credit_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teacher_email"
+                android:layout_marginLeft="@dimen/add_edittext_margin_left"
+                android:layout_marginRight="@dimen/add_edittext_margin_left"
+                android:layout_marginTop="@dimen/add_edittext_margin_top"
+                android:gravity="center_vertical"
+                android:hint="Credit Hours"
+                android:inputType="text"
+                android:paddingLeft="@dimen/add_edittext_padding"
+                android:paddingRight="@dimen/add_edittext_padding"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/credit_hour"
+                android:layout_marginLeft="@dimen/add_edittext_margin_left"
+                android:layout_marginRight="@dimen/add_edittext_margin_left"
+                android:layout_marginTop="@dimen/add_edittext_margin_top"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="Select Date"
+                android:inputType="text"
+                android:paddingLeft="@dimen/add_edittext_padding"
+                android:paddingRight="@dimen/add_edittext_padding"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_EditText
+                android:id="@+id/start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:layout_marginLeft="@dimen/add_edittext_margin_left"
+                android:layout_marginRight="@dimen/add_edittext_margin_left"
+                android:layout_marginTop="@dimen/add_edittext_margin_top"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="Class Start Time"
+                android:inputType="time"
+                android:paddingLeft="@dimen/add_edittext_padding"
+                android:paddingRight="@dimen/add_edittext_padding"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_EditText
+                android:id="@+id/end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start_time"
+                android:layout_marginLeft="@dimen/add_edittext_margin_left"
+                android:layout_marginRight="@dimen/add_edittext_margin_left"
+                android:layout_marginTop="@dimen/add_edittext_margin_top"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="Class End Time"
+                android:inputType="time"
+                android:paddingLeft="@dimen/add_edittext_padding"
+                android:paddingRight="@dimen/add_edittext_padding"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_EditText
+                android:id="@+id/tasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/end_time"
+                android:layout_marginLeft="@dimen/add_edittext_margin_left"
+                android:layout_marginRight="@dimen/add_edittext_margin_left"
+                android:layout_marginTop="@dimen/add_edittext_margin_top"
+                android:gravity="center_vertical"
+                android:hint="Tasks"
+                android:inputType="text"
+                android:paddingLeft="@dimen/add_edittext_padding"
+                android:paddingRight="@dimen/add_edittext_padding"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <com.developer.universitytimetable.utility.Open_Sans_Light_EditText
+                android:id="@+id/examinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tasks"
+                android:layout_marginLeft="@dimen/add_edittext_margin_left"
+                android:layout_marginRight="@dimen/add_edittext_margin_left"
+                android:layout_marginTop="@dimen/add_edittext_margin_top"
+                android:gravity="center_vertical"
+                android:hint="Upcoming Exam Info"
+                android:inputType="text"
+                android:paddingLeft="@dimen/add_edittext_padding"
+                android:paddingRight="@dimen/add_edittext_padding"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/examinfo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/add_edittext_margin_left"
+                android:layout_marginRight="@dimen/add_edittext_margin_left"
+                android:layout_marginTop="@dimen/add_edittext_margin_top"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:paddingLeft="@dimen/add_edittext_padding"
+                android:paddingRight="@dimen/add_edittext_padding"
+                android:text="Add Lesson" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

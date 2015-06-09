@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp" >
+
+    <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="21-05-2015"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="kgkdjkdjkdfkj"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+</LinearLayout>

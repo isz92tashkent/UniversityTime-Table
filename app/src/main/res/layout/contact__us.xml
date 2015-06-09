@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical"
+    tools:context="com.developer.universitytimetable.Contact_Us" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize" >
+
+     <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/back_btn" />
+
+        <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Contact Us"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:drawableBottom="@drawable/call_text"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:text="Cyberjaya Campus"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/call_button" />
+
+    <com.developer.universitytimetable.utility.Open_Sans_Light_Textview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text=" © 2015 Limkokwing University of Creative Technology.\nAll Rights Reserved."
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
